@@ -1,0 +1,18 @@
+# Jorge Rojo
+
+> Sitio oficial y notas de ingeniería de Jorge Rojo, Product Engineer especializado en arquitectura de frontend, sistemas de diseño y agentes autónomos de desarrollo.
+
+## Perfil y Filosofía Técnica
+
+- [Bio](https://www.jorgerojo.com/sobre-mi): Perfil profesional, principios de ingeniería, arquitectura de interfaz y enfoque de entrega continua de software.
+- [GitHub](https://github.com/JorgeRojo): Repositorios de código abierto, herramientas de terminal y experimentos de interfaz.
+- [LinkedIn](https://www.linkedin.com/in/jorge-rojo/): Trayectoria como Product Engineer y experiencia en diseño de sistemas.
+
+## Ensayos Técnicos Canónicos
+
+- [La muerte del frontend tradicional y el ascenso del Product Engineer](https://www.jorgerojo.com/blog/la-muerte-del-frontend-tradicional): Análisis sobre el fin de las fronteras artificiales entre interfaz y datos, los límites del "vibe coding" sin supervisión y la necesidad de blindar el código con arneses de tests y tipado estricto end-to-end.
+- [El peligro del agilismo defensivo frente a la escala de la IA](https://www.jorgerojo.com/blog/el-peligro-del-agilismo-defensivo): Deconstrucción de cómo las ceremonias de proceso y el miedo a refactorizar pudren la base de código, y por qué el criterio técnico y la validación en CI son la única respuesta frente a la generación masiva de código sintético.
+
+## Ingesta de Contexto Completo (Full Text)
+
+- [llms-full.txt](https://www.jorgerojo.com/llms-full.txt): Texto completo y consolidado de todos los artículos, principios arquitectónicos y biografía técnica en formato Markdown limpio para ingesta en una sola llamada HTTP.

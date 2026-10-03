@@ -1,0 +1,90 @@
+# Jorge Rojo - Notas de Ingeniería (Full Context)
+
+> Repositorio consolidado de textos, principios arquitectónicos y ensayos técnicos de Jorge Rojo (Product Engineer).
+> URL canónica: https://www.jorgerojo.com
+> Contacto / Perfiles: https://github.com/JorgeRojo | https://www.linkedin.com/in/jorge-rojo/
+
+---
+
+## 1. Perfil y Criterio de Ingeniería (Bio)
+URL: https://www.jorgerojo.com/sobre-mi
+
+Construir buen software siempre ha tenido más que ver con despejar el camino que con llenarlo de ceremonias. La técnica es imprescindible, desde luego, pero solo sirve si cumple dos cosas: interfaces rápidas para quien usa el producto y un camino despejado para que el equipo entregue sin trabas.
+
+Por eso nunca me han gustado las "burbujas de gremio", ese parapeto cómodo de "eso no entra en mi ticket" o "a mí que me entreguen el endpoint listo". Mi terreno natural es la arquitectura de interfaz y el frontend, donde más disfruto afinando el rendimiento y cuidando cada detalle visual, pero me muevo con la misma tranquilidad en cualquier capa del stack si hace falta para sacar adelante una entrega. Me interesa la jugada completa: conectar la experiencia de usuario con la lógica de negocio sin intermediarios. Por eso diseño agentes de IA y herramientas de terminal que quitan tareas mecánicas para que el equipo avance con verdadera autonomía.
+
+### Principios de Trabajo:
+- Menos reuniones, más código funcionando: Una demo de dos minutos en staging aclara más que diez hilos interminables en Slack. El software funcionando es la herramienta de comunicación más honesta: ahorra debates circulares y permite decidir con el producto en la mano en vez de con suposiciones de pasillo.
+- El diseño también es ingeniería: Una funcionalidad no está terminada solo porque la API responda en cinco milisegundos si luego la interfaz se siente tosca, confusa o se atasca al renderizar. Trato la tipografía, los espacios en blanco, la fluidez y los estados de carga con el mismo rigor técnico que una llamada de red. Cuidar la interacción es la forma más directa de respetar el tiempo de quien usa lo que programas.
+- Hacer lo correcto por defecto ("Pit of Success"): Las guías de quince páginas se olvidan un viernes por la tarde. En lugar de acumular documentación pasiva, plasmo el criterio en el software: linters estrictos, scripts de terminal y pipelines que consiguen que la opción técnicamente correcta sea, por inercia, la más rápida y cómoda para todo el equipo.
+- IA con criterio y arneses defensivos: Los agentes ejecutan y escriben código a una velocidad brutal, pero la arquitectura y el criterio no se delegan. Blinda el código con tests y arneses estrictos para que la IA no pueda hacer otra cosa que resolverlo bien. Con los límites claros en el pipeline, un agente se convierte en una palanca enorme para el equipo sin comprometer producción.
+
+---
+
+## 2. La muerte del frontend tradicional y el ascenso del Product Engineer
+URL: https://www.jorgerojo.com/blog/la-muerte-del-frontend-tradicional
+Fecha: 25 sept 2026
+Tags: Product Engineer, Frontend, Arquitectura, Tooling
+
+Maquetar componentes en React y pelearse con márgenes de CSS nunca fue una disciplina técnica aislada. Hoy cualquier agente te saca un diseño de Figma a código y te escribe los tests en dos minutos. Quien limitaba su día a picar etiquetas y enlazar un par de botones compite ahora con herramientas que hacen eso al instante y gratis. Picar sintaxis nunca fue la parte difícil. Lo valioso siempre ha sido entender el producto end-to-end: saber qué datos necesita la pantalla, cómo fluye el estado y resolver problemas reales sin delegar el criterio en terceros.
+
+### El fin de la frontera artificial
+Durante años se normalizó una cadena de traspasos absurda:
+- Diseño preparaba pantallas en Figma sin contrastar la viabilidad del modelo.
+- Frontend abría un ticket en Jira reclamando los endpoints.
+- Backend tardaba dos semanas en devolver un JSON con nombres de campo inconsistentes.
+- Nadie se responsabilizaba de si la consulta dejaba la base de datos temblando.
+
+Montar una "muralla burocrática" entre la interfaz y los datos nunca tuvo sentido; hoy es insostenible. Con buen criterio técnico y herramientas modernas, definir el contrato con TypeScript, gestionar el estado en cliente, conectar el endpoint y dejar la interfaz lista con feedback instantáneo se hace en la misma tarde. Quitar intermediarios permite que quien diseña la experiencia de usuario entregue la funcionalidad completa, sin quedarse de brazos cruzados esperando a que otro departamento le desbloquee un ticket.
+
+### Construcción de software end-to-end:
+1. Arquitectura de estado y contratos de datos: Tipado estricto de extremo a extremo, contratos de API compartidos y estado predecible sin sorpresas.
+2. Rendimiento web y carga sin grasa: Carga inmediata, componentes sin re-renders fantasma y cero kilobytes de JavaScript si un HTML basta.
+3. Sistemas de diseño vivos y accesibles: Tokens sincronizados, componentes accesibles por defecto y consistencia visual sin reinventar la rueda.
+4. Sistemas agénticos y herramientas con contexto: Agentes que ejecutan cambios de UI guiados por tests y contratos, no por ocurrencias al vuelo.
+5. Validación defensiva y control de cambios: Tests de integración de flujos críticos, linters implacables y filtros de CI que evitan sustos en producción.
+
+### La resaca del "vibe coding"
+Lanzar a un agente a escupir trescientas líneas sin supervisión queda muy aparente en redes. La resaca llega en producción, cuando el componente entra en bucles infinitos de renderizado y el navegador no da hecho con las peticiones a la API.
+
+Escribir sintaxis siempre fue la parte fácil. Lo complicado es diseñar una interfaz que no se desmorone a los dos meses. Hace falta entender el ciclo de vida del estado, esquivar renderizados innecesarios y mantener la accesibilidad al día. Blindar la interfaz con tests y construir arneses para que los agentes no puedan hacer otra cosa que resolverlo bien es lo que permite entregar en una tarde lo que antes atascaba al equipo durante semanas.
+
+Principio: Cuando cualquiera puede generar componentes en dos segundos con un prompt, el valor de un ingeniero reside en el criterio. Diseñar interfaces estables y blindarlas con arneses automáticos antes de tocar producción es lo que separa el software profesional de los experimentos de fin de semana.
+
+---
+
+## 3. El peligro del agilismo defensivo frente a la escala de la IA
+URL: https://www.jorgerojo.com/blog/el-peligro-del-agilismo-defensivo
+Fecha: 19 jul 2026
+Tags: Cultura Técnica, Frontend, Arquitectura, Agile
+
+Escudarse en que algo no entra en el ticket, archivar los marrones en un cajón de deuda técnica o aplazar lo incómodo para el siguiente trimestre: cualquiera que haya trabajado en equipo lo tiene visto de sobra. Sabes que un componente está roto por dentro, pero nadie quiere meterle mano por no frenar la entrega o por miedo a romper algo colateral. La planificación tiene sentido, pero se pervierte cuando sirve de excusa para esquivar lo evidente:
+- Componentes de mil líneas que nadie se atreve a abrir por si algo explota.
+- Estados globales imposibles de seguir donde nadie sabe de dónde viene cada cambio.
+- Re-renders y efectos raros que se tapan metiendo otro useEffect para salir del paso.
+
+Ahí reside el "agilismo defensivo". Preferimos refugiarnos en una migración masiva de un año entero antes que abrir un componente roto y ponerle orden hoy. Planificar reescrituras eternas da una sensación estupenda de progreso ordenado en los tickets sin que nadie se queme las manos, mientras que arreglar el desorden real en producción da pánico porque expone fallos de verdad. Aplazar lo importante con la promesa de que la gran migración lo curará todo convierte la base de código en un castillo de naipes que será imposible de salvar cuando empiece a tambalearse.
+
+### Tres reuniones para mover un componente de sitio
+Con la excusa del consenso, muchos equipos han conseguido que extraer un componente reutilizable o unificar dos botones requiera dos hilos en Slack, tres llamadas y la bendición de medio departamento.
+
+A eso se le llama agilidad, pero en realidad es una "póliza colectiva". Si decidimos entre ocho qué props ponerle a un botón, nadie se come el marrón si luego algo falla en el despliegue.
+
+Y luego están las discusiones interminables en las pull requests. Pasarse media tarde debatiendo el orden de las propiedades de estilo o cómo desestructurar las props es perder el tiempo. Si una regla importa, se programa en el linter o en el pipeline de CI, y que la máquina proteste en trescientos milisegundos sin necesidad de asambleas.
+
+### Cuando la IA pica código, lo que cuenta es el criterio
+Este modelo de trabajo ya crujía antes, pero frente a la escala de la IA directamente no se sostiene.
+
+Hoy cualquier agente te genera un componente de interfaz, un hook o una pantalla completa en lo que tardas en pestañear. Si el trabajo de alguien consistía solo en traducir requisitos mascados a sintaxis y mover tareas en el tablero, tiene un problema: picar código sin pensar ya no tiene ningún misterio.
+
+Ningún agente te va a frenar cuando metas el cuarto estado derivado en un contexto que re-renderiza media pantalla a cada tecla, ni le va a temblar el pulso por encadenar tres useEffect hasta convertir el formulario en un festival de tirones. La IA produce a una velocidad brutal exactamente la sintaxis que le pides, pero anticipar qué código envejece con dignidad y cuál es una trampa técnica a tres meses vista sigue dependiendo del criterio humano.
+
+La velocidad de los modelos no sirve de nada sin arneses técnicos. Hay que blindar el código con tests para que el agente no tenga escapatoria y resuelva la tarea bien a la primera.
+
+### Menos burocracia de procesos, más software que funciona:
+1. Las normas, a las herramientas: Lo que pueda validar un linter o el CI en un segundo no se discute en reuniones.
+2. Hacerse cargo de la jugada completa: Menos traspasos entre departamentos y más autonomía para diseñar, probar y desplegar.
+3. Cuidar los cimientos: Evitar el sobrediseño no significa dejar que el código se pudra. Arreglar las cosas a tiempo ahorra semanas de parches.
+4. Software en producción frente a mover tareas: El valor real está en interfaces rápidas y fiables que no se caen, no en aparentar avance moviendo tickets.
+
+Principio: La agilidad técnica se demuestra en los hechos. Una arquitectura limpia, tests implacables en el pipeline y la tranquilidad de poder desplegar un viernes a las seis de la tarde sin que a nadie le tiemble el pulso.
