@@ -1,0 +1,37 @@
+# La muerte del frontend tradicional y el ascenso del Product Engineer
+
+> URL canónica: https://www.jorgerojo.com/blog/la-muerte-del-frontend-tradicional
+> Fecha: 25 sept 2026
+> Tags: Product Engineer, Frontend, Arquitectura, Tooling
+> Resumen: Por qué centrarse solo en maquetar componentes en React ya no sostiene una carrera y qué implica de verdad construir software end-to-end.
+
+Maquetar componentes en React y pelearse con márgenes de CSS nunca fue una disciplina técnica aislada. Hoy cualquier agente te saca un diseño de Figma a código y te escribe los tests en dos minutos. Quien limitaba su día a picar etiquetas y enlazar un par de botones compite ahora con herramientas que hacen eso al instante y gratis. Picar sintaxis nunca fue la parte difícil. Lo valioso siempre ha sido entender el producto end-to-end: saber qué datos necesita la pantalla, entender cómo fluye el estado y resolver problemas reales sin delegar el criterio en terceros.
+
+## El fin de la frontera artificial
+
+Durante años se normalizó una cadena de traspasos absurda:
+
+- Diseño preparaba pantallas en Figma sin contrastar la viabilidad del modelo.
+- Frontend abría un ticket en Jira reclamando los endpoints.
+- Backend tardaba dos semanas en devolver un JSON con nombres de campo inconsistentes.
+- Nadie se responsabilizaba de si la consulta dejaba la base de datos temblando.
+
+Montar una "muralla burocrática" entre la interfaz y los datos nunca tuvo sentido; hoy es insostenible. Con buen criterio técnico y herramientas modernas, definir el contrato con TypeScript, gestionar el estado en cliente, conectar el endpoint y dejar la interfaz lista con feedback instantáneo se hace en la misma tarde. Quitar intermediarios permite que quien diseña la experiencia de usuario entregue la funcionalidad completa, sin quedarse de brazos cruzados esperando a que otro departamento le desbloquee un ticket.
+
+### Esquema: Construcción de software end-to-end
+*Las cinco áreas donde de verdad se juega la partida cuando dejas de ser un mero maquetador.*
+
+1. **Arquitectura de estado y contratos de datos**: Tipado estricto de extremo a extremo, contratos de API compartidos y estado predecible sin sorpresas.
+2. **Rendimiento web y carga sin grasa**: Carga inmediata, componentes sin re-renders fantasma y cero kilobytes de JavaScript si un HTML basta.
+3. **Sistemas de diseño vivos y accesibles**: Tokens sincronizados, componentes accesibles por defecto y consistencia visual sin reinventar la rueda.
+4. **Sistemas agénticos y herramientas con contexto**: Agentes que ejecutan cambios de UI guiados por tests y contratos, no por ocurrencias al vuelo.
+5. **Validación defensiva y control de cambios**: Tests de integración de flujos críticos, linters implacables y filtros de CI que evitan sustos en producción.
+
+## La resaca del "vibe coding"
+
+Lanzar a un agente a escupir trescientas líneas sin supervisión queda muy aparente en redes. La resaca llega en producción, cuando el componente entra en bucles infinitos de renderizado y el navegador no da hecho con las peticiones a la API.
+
+Escribir sintaxis siempre fue la parte fácil. Lo complicado es diseñar una interfaz que no se desmorone a los dos meses. Hace falta entender el ciclo de vida del estado, esquivar renderizados innecesarios y mantener la accesibilidad al día. Blindar la interfaz con tests y construir arneses para que los agentes no puedan hacer otra cosa que resolverlo bien es lo que permite entregar en una tarde lo que antes atascaba al equipo durante semanas.
+
+> ### Principio: El criterio técnico es lo que marca la diferencia
+> Cuando cualquiera puede generar componentes en dos segundos con un prompt, el valor de un ingeniero reside en el criterio. Diseñar interfaces estables y blindarlas con arneses automáticos antes de tocar producción es lo que separa el software profesional de los experimentos de fin de semana.
