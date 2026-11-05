@@ -1,0 +1,33 @@
+# Los hackers de fin de semana, desatados con la IA
+
+> URL canónica: https://www.jorgerojo.com/blog/los-hackers-de-fin-de-semana
+> Fecha: 5 nov 2026
+> Tags: Software Engineering, Seguridad Informática, Arquitectura de Software, IA
+> Resumen: Montar en dos tardes la herramienta que llevabas años pidiendo tiene mucho mérito. El problema es no saber qué puertas has dejado abiertas.
+
+Siempre me ha caído bien la gente que, en lugar de resignarse ante una tarea pesada, se remanga para quitársela de encima. Con la llegada de los nuevos modelos, ese entusiasmo se ha disparado. Perfiles sin base técnica, pero con la mejor intención del mundo y ganas de aportar, están logrando construir en dos tardes la herramienta que llevaban años pidiendo.
+
+Tiene su mérito, las cosas como son. El subidón de ver que el invento funciona y que has conseguido puentear el sistema es tan grande que más de uno ya se siente como en una película de espías. No dudan ni un segundo en presumir a los cuatro vientos de su hazaña o de cómo acaban de ahorrarle a la empresa la factura de algún servicio de pago. La voluntad es inmejorable; el pequeño detalle que se les escapa es a qué precio lo han conseguido.
+
+## La trampa de las llaves prestadas
+
+Un modelo de lenguaje es el cómplice más complaciente que existe: tú le pides abrir una puerta y él te pasa un soplete encantado de la vida, sin preguntarte antes si hay una fuga de gas en la habitación.
+
+Para que estos "hackers de fin de semana" puedan conectar sus inventos con las aplicaciones con las que trabajan a diario, la máquina suele tirar por el camino del medio y aprovechar pequeños fallos de seguridad por omisión:
+
+- El invento arranca y los datos fluyen, que es lo único que hace falta para cantar victoria el lunes por la mañana.
+- Por debajo, la herramienta opera con unas "llaves prestadas" que dejan el sistema potencialmente abierto de par en par, sin filtros ni control de daños.
+- Mientras el autor celebra haberse ahorrado una licencia comercial, acaba de montar sin querer una autopista sin peaje hacia los datos del negocio.
+
+Nadie lo hace con mala fe, pero en ingeniería de software lo que no sabes es precisamente lo que te explota en la cara. Conseguir que algo funcione a base de prompts es la parte fácil; el verdadero trabajo consiste en vigilar qué puertas acabas de dejar abiertas por el camino.
+
+## Tres personas bajo la tormenta
+
+La escena que está dejando esta fiebre se parece bastante a tres personas en mitad de un buen chaparrón:
+
+- La primera sigue de brazos cruzados porque aún no usa la IA, calándose hasta los huesos mientras mira cómo llueve.
+- La segunda es ese perfil motivado que sí usa la IA: mira al cielo con una sonrisa de oreja a oreja, vaso en mano, feliz de ver cómo se llena de agua aunque se esté empapando de arriba abajo sin enterarse.
+- La tercera es el profesional con base técnica, que sostiene un paraguas con una mano y saca el vaso con la otra para recoger el agua sin mojarse.
+
+> ### Principio: La ingeniería es el paraguas
+> La iniciativa de construir con IA marca la diferencia frente a quedarse quieto bajo la lluvia. Sumarle criterio y fundamentos de ingeniería es lo que evita que el chaparrón te deje calado.

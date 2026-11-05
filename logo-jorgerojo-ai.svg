@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -35 790 180" width="790" height="180">
+  <defs>
+    <style>.a{fill:#fefefe;}.b{fill:#e11d48;}.c{fill:#f43f5e;}.d{fill:#fb7185;}.e{fill:#8ca9ad;}.f{fill:#afcdd2;}.g{fill:#738e93;}.h{fill:#edf4f6;}.i{fill:#fda4af;}.j{fill:#be123c;}@media (prefers-color-scheme: light){.a{fill:#0f172a;}.b{fill:#be123c;}.c{fill:#e11d48;}.d{fill:#9f1239;}.e{fill:#0d9488;}.f{fill:#0f766e;}.g{fill:#042f2e;}.h{fill:#1e293b;}.i{fill:#be123c;}.j{fill:#881337;}}</style>
+    <filter id="roundedDarkBorder" x="-30%" y="-30%" width="160%" height="160%">
+      <!-- 1. Dilate to establish thicker core -->
+      <feMorphology in="SourceAlpha" operator="dilate" radius="11" result="dilatedAlpha" />
+      
+      <!-- 2. Gaussian blur for perfectly rounded vertices and corners -->
+      <feGaussianBlur in="dilatedAlpha" stdDeviation="8" result="blurredAlpha" />
+      
+      <!-- 3. High-contrast alpha threshold to solidify rounded outer contour -->
+      <feColorMatrix in="blurredAlpha" type="matrix" 
+                     values="1 0 0 0 0
+                             0 1 0 0 0
+                             0 0 1 0 0
+                             0 0 0 35 -7" result="roundedBorderAlpha" />
+      
+      <!-- 4. Crisp drop shadow -->
+      <feGaussianBlur in="roundedBorderAlpha" stdDeviation="4" result="shadowBlur" />
+      <feFlood flood-color="#000000" flood-opacity="0.75" result="shadowFlood" />
+      <feComposite in="shadowFlood" in2="shadowBlur" operator="in" result="shadow" />
+
+      <!-- 5. Dark blue color fill (Midnight Slate #0f172a) -->
+      <feFlood flood-color="#0f172a" result="borderColor" />
+      <feComposite in="borderColor" in2="roundedBorderAlpha" operator="in" result="border" />
+
+      <!-- 6. Composite together: shadow + dark blue rounded border + logo graphics -->
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="border" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#roundedDarkBorder)">
+    <polygon class="a" points="24 0 24 23.03 47 0 24 0"/>
+<polygon class="b" points="331.99 83 354.99 83 354.99 60 331.99 60 331.99 83"/>
+<polygon class="c" points="331.99 59.01 354.99 59.01 354.99 36.01 331.99 36.01 331.99 59.01"/>
+<polygon class="d" points="355.99 34.98 378.99 34.98 378.99 11.98 355.99 34.98"/>
+<polygon class="e" points="24 83.03 47 83.03 47 60 24 60 24 83.03"/>
+<polygon class="f" points="24 59.04 47 59.04 47 36.01 24 36.01 24 59.04"/>
+<polygon class="g" points="24 84 24 107.03 47 84 24 84"/>
+<polygon class="e" points="75.99 82.98 98.97 82.98 98.97 60 75.99 60 75.99 82.98"/>
+<polygon class="f" points="100.02 59.04 122.99 59.04 122.99 36.01 100.02 36.01 100.02 59.04"/>
+<polygon class="f" points="52.02 58.98 75 58.98 75 36.01 52.02 36.01 52.02 58.98"/>
+<polygon class="e" points="52.79 60 75 82.21 75 60 52.79 60"/>
+<polygon class="e" points="100.02 60 100.02 83.03 122.99 60 100.02 60"/>
+<polygon class="h" points="75.99 34.98 98.97 34.98 98.97 12.01 75.99 12.01 75.99 34.98"/>
+<polygon class="e" points="128.01 83.03 150.99 83.03 150.99 60 128.01 60 128.01 83.03"/>
+<polygon class="f" points="128.01 59.04 150.99 59.04 150.99 36.01 128.01 36.01 128.01 59.04"/>
+<polygon class="h" points="152.01 34.98 175.01 34.98 175.01 11.98 152.01 34.98"/>
+<polygon class="e" points="228 83.03 251 83.03 251 60 228 60 228 83.03"/>
+<polygon class="f" points="228 59.04 251 59.04 251 36.01 228 36.01 228 59.04"/>
+<polygon class="g" points="228 84 228 107.03 251 84 228 84"/>
+<polygon class="h" points="204.01 34.98 227.01 34.98 227.01 11.98 204.01 11.98 204.01 34.98"/>
+<polygon class="f" points="180.01 59.04 203.01 59.04 203.01 36.01 180.01 36.01 180.01 59.04"/>
+<polygon class="e" points="180.01 60 203.01 83.03 203.01 60 180.01 60"/>
+<polygon class="e" points="280 83.03 303 83.03 303 60 280 60 280 83.03"/>
+<polygon class="f" points="256 59.04 279 59.04 279 36.01 256 36.01 256 59.04"/>
+<polygon class="e" points="256 60 279 83.03 279 60 256 60"/>
+<polygon class="e" points="303.99 83.03 327 83.03 303.99 60 303.99 83.03"/>
+<polygon class="h" points="280 34.98 303 34.98 303 11.98 280 11.98 280 34.98"/>
+<polygon class="f" points="303.99 36.01 303.99 59.04 327 36.01 303.99 36.01"/>
+<polygon class="g" points="180.01 107.03 203.01 107.03 203.01 84 180.01 107.03"/>
+<polygon class="f" points="152.01 36.01 152.01 59.04 175.01 36.01 152.01 36.01"/>
+<polygon class="h" points="128.01 34.98 151.02 34.98 128.01 11.98 128.01 34.98"/>
+<polygon class="h" points="100.02 34.98 122.99 34.98 100.02 11.98 100.02 34.98"/>
+<polygon class="h" points="52.79 34.98 75 34.98 75 12.78 52.79 34.98"/>
+<polygon class="h" points="228 34.98 251 34.98 228 11.98 228 34.98"/>
+<polygon class="h" points="180.01 34.98 203.01 34.98 203.01 11.98 180.01 34.98"/>
+<polygon class="g" points="204.01 107.03 227.01 107.03 227.01 84 204.01 84 204.01 107.03"/>
+<polygon class="e" points="204.01 60 204.01 83.03 227.01 60 204.01 60"/>
+<polygon class="h" points="303.99 34.98 327 34.98 303.99 11.98 303.99 34.98"/>
+<polygon class="h" points="256 34.98 279 34.98 279 11.98 256 34.98"/>
+<polygon class="d" points="331.99 34.98 354.99 34.98 331.99 12.01 331.99 34.98"/>
+<polygon class="c" points="356.02 36.01 356.02 59.01 378.99 36.01 356.02 36.01"/>
+<polygon class="h" points="24 35.01 47 35.01 47 11.98 24 35.01"/>
+<polygon class="g" points="0 107.03 23 107.03 23 84 0 107.03"/>
+<polygon class="i" points="460.01 0 460.01 23 483.01 0 460.01 0"/>
+<polygon class="b" points="460.04 82.98 483.01 82.98 483.01 60 460.04 60 460.04 82.98"/>
+<polygon class="c" points="460.04 59.01 483.01 59.01 483.01 36.04 460.04 36.04 460.04 59.01"/>
+<polygon class="j" points="460.04 84 460.04 107.03 483.04 84 460.04 84"/>
+<polygon class="d" points="460.01 35.01 483.01 35.01 483.01 11.98 460.01 35.01"/>
+<polygon class="j" points="436.01 107.03 459.01 107.03 459.01 84.03 436.01 107.03"/>
+<polygon class="b" points="511.95 83 535 83 535 60 511.95 60 511.95 83"/>
+<polygon class="c" points="536 59.01 559 59.01 559 36.01 536 36.01 536 59.01"/>
+<polygon class="c" points="488.01 59.01 511.01 59.01 511.01 36.01 488.01 36.01 488.01 59.01"/>
+<polygon class="b" points="488.01 60 511.01 83 511.01 60 488.01 60"/>
+<polygon class="b" points="536 60 536 83 559 60 536 60"/>
+<polygon class="d" points="512 35.01 535 35.01 535 12.01 512 12.01 512 35.01"/>
+<polygon class="d" points="536 35.01 559 35.01 536 12.01 536 35.01"/>
+<polygon class="d" points="488.01 35.01 511.01 35.01 511.01 12.01 488.01 35.01"/>
+<polygon class="b" points="407.95 83 431.01 83 431.01 60 407.95 60 407.95 83"/>
+<polygon class="c" points="432.01 59.01 455.01 59.01 455.01 36.01 432.01 36.01 432.01 59.01"/>
+<polygon class="c" points="384.02 59.01 406.99 59.01 406.99 36.01 384.02 36.01 384.02 59.01"/>
+<polygon class="b" points="384.02 60 406.99 83 406.99 60 384.02 60"/>
+<polygon class="b" points="432.01 60 432.01 83 455.01 60 432.01 60"/>
+<polygon class="d" points="408.01 35.01 431.01 35.01 431.01 12.01 408.01 12.01 408.01 35.01"/>
+<polygon class="d" points="432.01 35.01 455.01 35.01 432.01 12.01 432.01 35.01"/>
+<polygon class="d" points="384.02 35.01 406.99 35.01 406.99 12.01 384.02 35.01"/>
+    <!-- Prominent IA Pill Badge -->
+    <rect x="580" y="22" width="124" height="70" rx="18" fill="#f43f5e" />
+    <text x="642" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="52" text-anchor="middle" letter-spacing="1">IA</text>
+  </g>
+</svg>

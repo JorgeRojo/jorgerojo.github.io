@@ -1,0 +1,33 @@
+# El arte de auditar para no resolver, potenciado con IA
+
+> URL canónica: https://www.jorgerojo.com/blog/el-arte-de-auditar-para-no-resolver
+> Fecha: 10 oct 2026
+> Tags: Cultura Técnica, Product Engineer, Tooling, Arquitectura
+> Resumen: Generar listas de pegas con un prompt cuesta diez segundos. Lo valioso de verdad es la madurez para descartar el ruido y la valentía para encontrar soluciones.
+
+Un buen equipo se nota en cómo resuelve los problemas, no en cuántas pegas es capaz de encontrar. Casi siempre pasa lo mismo: justo cuando toca cerrar una entrega y dejar la pantalla lista, aparece el clásico "fiscalizador pasivo". Alguien que suelta una lista de dudas a última hora pero rara vez propone una solución. Prefiere montar aduanas y dárselas de guardián de la calidad sin arriesgar jamás el cuello. Y además, ahora lo hace con un simple prompt.
+
+## La comodidad de no mojarse
+
+Imaginar qué puede fallar es facilísimo. Arreglarlo de verdad y responder por el código desplegado es otra historia. Una vez un sabio compañero me dijo que "los caminos del error son inescrutables", y no hace tanto que entendí a qué se refería: si intentas cubrir todas las posibilidades de error, estás llamando a la eternidad.
+
+Quien se instala en el papel de auditor lo sabe de sobra y le saca partido:
+
+- Avisa de dudas sin comprometerse a nada; proponer una solución que toque la pantalla exige arriesgarse.
+- Nunca firma arreglos complejos, así jamás se equivoca ni se expone si algo se tuerce.
+- Llena el gestor de tareas de advertencias para dar apariencia de estar ocupadísimo, aunque la entrega siga atascada.
+
+Desde fuera, la maniobra suele colar: comentar en todas partes y abrir diez incidencias transmite una falsa sensación de rigor. Parece que esa persona sostiene el proyecto, cuando en realidad solo está retransmitiendo el tráfico. Quienes salvan los muebles de verdad son los que se remangan para apagar el fuego en silencio.
+
+## Cuando el auditor descubre la IA
+
+Con los modelos de lenguaje, la comedia ha ido a más. Quien antes invertía horas en buscar erratas de estilo cree haber descubierto el filón definitivo: pedirle a un modelo en frío que audite un archivo ajeno.
+
+El resultado se ve venir a la legua. Si le pides a una máquina que busque fallos sin contexto de negocio, no se va a quedar de brazos cruzados. Te va a fabricar problemas donde no los hay: tipos innecesarios, advertencias genéricas de manual y casos extremos que no se van a dar en la vida.
+
+Soltar ese volcado en bruto sobre el equipo no es rigor; es meter ruido para eludir la propia responsabilidad. Pedirle a una herramienta cincuenta quejas cuesta diez segundos.
+
+Con los años aprendes que en los equipos maduros la partida se juega en otro sitio: lo fácil es amontonar alertas; lo valioso es tener la madurez para descartar el noventa por ciento de ruido irrelevante y la valentía de resolver lo que de verdad compromete al producto.
+
+> ### Principio: Menos inspectores, más soluciones
+> Señalar dudas desde la grada no cuesta nada. Lo que define a un buen ingeniero de producto es dar un paso al frente, asumir la incertidumbre y dejar el software funcionando.

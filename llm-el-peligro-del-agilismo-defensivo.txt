@@ -1,0 +1,45 @@
+# El peligro del agilismo defensivo frente a la escala de la IA
+
+> URL canónica: https://www.jorgerojo.com/blog/el-peligro-del-agilismo-defensivo
+> Fecha: 19 jul 2026
+> Tags: Cultura Técnica, Frontend, Arquitectura, Agile
+> Resumen: Dejar que la interfaz se llene de parches para no frenar la entrega no es agilidad, es miedo a tocar el código.
+
+Escudarse en que algo no entra en el ticket, archivar los marrones en un cajón de deuda técnica o aplazar lo incómodo para el siguiente trimestre: cualquiera que haya trabajado en equipo lo tiene visto de sobra. Sabes que un componente está roto por dentro, pero nadie quiere meterle mano por no frenar la entrega o por miedo a romper algo colateral. La planificación tiene sentido, pero se pervierte cuando sirve de excusa para esquivar lo evidente:
+
+- Componentes de mil líneas que nadie se atreve a abrir por si algo explota.
+- Estados globales imposibles de seguir donde nadie sabe de dónde viene cada cambio.
+- Re-renders y efectos raros que se tapan metiendo otro `useEffect` para salir del paso.
+
+Ahí reside el "agilismo defensivo". Preferimos refugiarnos en una migración masiva de un año entero antes que abrir un componente roto y ponerle orden hoy. Planificar reescrituras eternas da una sensación estupenda de progreso ordenado en los tickets sin que nadie se queme las manos, mientras que arreglar el desorden real en producción da pánico porque expone fallos de verdad. Aplazar lo importante con la promesa de que la gran migración lo curará todo convierte la base de código en un castillo de naipes que será imposible de salvar cuando empiece a tambalearse.
+
+## Tres reuniones para mover un componente de sitio
+
+Con la excusa del consenso, muchos equipos han conseguido que extraer un componente reutilizable o unificar dos botones requiera dos hilos en Slack, tres llamadas y la bendición de medio departamento.
+
+A eso se le llama agilidad, pero en realidad es una "póliza colectiva". Si decidimos entre ocho qué props ponerle a un botón, nadie se come el marrón si luego algo falla en el despliegue.
+
+Y luego están las discusiones interminables en las pull requests. Pasarse media tarde debatiendo el orden de las propiedades de estilo o cómo desestructurar las props es perder el tiempo. Si una regla importa, se programa en el linter o en el pipeline de CI, y que la máquina proteste en trescientos milisegundos sin necesidad de asambleas.
+
+## Cuando la IA pica código, lo que cuenta es el criterio
+
+Este modelo de trabajo ya crujía antes, pero frente a la escala de la IA directamente no se sostiene.
+
+Hoy cualquier agente te genera un componente de interfaz, un hook o una pantalla completa en lo que tardas en pestañear. Si el trabajo de alguien consistía solo en traducir requisitos mascados a sintaxis y mover tareas en el tablero, tiene un problema: picar código sin pensar ya no tiene ningún misterio.
+
+Ningún agente te va a frenar cuando metas el cuarto estado derivado en un contexto que re-renderiza media pantalla a cada tecla, ni le va a temblar el pulso por encadenar tres `useEffect` hasta convertir el formulario en un festival de tirones. La IA produce a una velocidad brutal exactamente la sintaxis que le pides, pero anticipar qué código envejece con dignidad y cuál es una trampa técnica a tres meses vista sigue dependiendo del criterio humano.
+
+La velocidad de los modelos no sirve de nada sin arneses técnicos. Hay que blindar el código con tests para que el agente no tenga escapatoria y resuelva la tarea bien a la primera.
+
+### Esquema: Menos burocracia de procesos, más software que funciona
+*Cuatro ideas de sentido común para dejar de esconderse detrás de los tickets.*
+
+1. **Las normas, a las herramientas**: Lo que pueda validar un linter o el CI en un segundo no se discute en reuniones.
+2. **Hacerse cargo de la jugada completa**: Menos traspasos entre departamentos y más autonomía para diseñar, probar y desplegar.
+3. **Cuidar los cimientos**: Evitar el sobrediseño no significa dejar que el código se pudra. Arreglar las cosas a tiempo ahorra semanas de parches.
+4. **Software en producción frente a mover tareas**: El valor real está en interfaces rápidas y fiables que no se caen, no en aparentar avance moviendo tickets.
+
+> ### Principio: Menos asamblea, más criterio
+> La agilidad técnica se demuestra en los hechos. Una arquitectura limpia,
+> tests implacables en el pipeline y la tranquilidad de poder desplegar un
+> viernes a las seis de la tarde sin que a nadie le tiemble el pulso.

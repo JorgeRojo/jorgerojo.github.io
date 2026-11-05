@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .a { fill: #fefefe; }
+      .h { fill: #edf4f6; }
+      .f { fill: #afcdd2; }
+      .e { fill: #8ca9ad; }
+      .g { fill: #738e93; }
+      .d { fill: #fb7185; }
+      .c { fill: #f43f5e; }
+      .b { fill: #e11d48; }
+    </style>
+  </defs>
+  <rect width="128" height="128" class="bg"/>
+  <g transform="translate(14.49, 10.48)">
+    <!-- Letter J -->
+    <polygon class="a" points="24 0 24 23.03 47 0 24 0"/>
+    <polygon class="h" points="24 35.01 47 35.01 47 11.98 24 35.01"/>
+    <polygon class="f" points="24 59.04 47 59.04 47 36.01 24 36.01 24 59.04"/>
+    <polygon class="e" points="24 83.03 47 83.03 47 60 24 60 24 83.03"/>
+    <polygon class="g" points="24 84 24 107.03 47 84 24 84"/>
+    <polygon class="g" points="0 107.03 23 107.03 23 84 0 107.03"/>
+
+    <!-- Letter R -->
+    <polygon class="d" points="52.02 34.98 75.02 34.98 52.02 12.01 52.02 34.98"/>
+    <polygon class="d" points="76.02 34.98 99.02 34.98 99.02 11.98 76.02 34.98"/>
+    <polygon class="c" points="52.02 59.01 75.02 59.01 75.02 36.01 52.02 36.01 52.02 59.01"/>
+    <polygon class="c" points="76.05 36.01 76.05 59.01 99.02 36.01 76.05 36.01"/>
+    <polygon class="b" points="52.02 83 75.02 83 75.02 60 52.02 60 52.02 83"/>
+  </g>
+</svg>
